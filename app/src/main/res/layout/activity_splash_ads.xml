@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background">
+
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+    <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <WebView
+                android:id="@+id/wv_ads"
+                android:layout_width="@dimen/startup_ads_width"
+                android:layout_height="@dimen/startup_ads_height"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"/>
+
+        <Space
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+        <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#ffffffff"
+                android:textAlignment="center"
+                android:text="@string/tag_line"
+                android:maxLines="2"
+                android:gravity="center_horizontal"/>
+
+        <Button android:id="@+id/button_enter"
+                android:onClick="buttonEnterPressed"
+                android:text="Enter"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:textStyle="normal"
+                android:background="@color/button_login" />
+
+    </LinearLayout>
+
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+</LinearLayout>

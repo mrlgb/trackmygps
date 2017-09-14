@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GPSDetailsTableColumn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="GPSDetailsTableData">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="SettingsTableHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/table_header</item>
+        <item name="android:textSize">@dimen/table_header</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_span">2</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="EditTextField">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@color/edittext_background</item>
+        <item name="android:textColor">@color/edittext_color</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="EditTextFieldNext" parent="@style/EditTextField">
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <style name="EditTextFieldDone" parent="@style/EditTextField">
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background">
+
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:text="Login"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Username"
+                android:padding="5dp"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etxt_username"
+                android:padding="5dp"
+                style="@style/EditTextFieldNext" />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:padding="5dp"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etxt_password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                style="@style/EditTextFieldDone" />
+
+        <Button
+                android:id="@+id/button_submit"
+                android:onClick="buttonSubmitPressed"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:textStyle="normal"
+                android:background="@color/button_login" />
+
+        <Button
+                android:id="@+id/button_cancel"
+                android:onClick="buttonCancelPressed"
+                android:text="Cancel"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:textStyle="normal"
+                android:background="@color/button_cancel" />
+
+    </LinearLayout>
+
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+
+</LinearLayout>
